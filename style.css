@@ -1,0 +1,327 @@
+:root {
+    --main: #111;
+    --font-color: #fff;
+    --choices-background: #222;
+    --a-hover: #303030;
+    --choice-focus: #1a1a1a;
+    --alarm-card: #1b1b1b;
+    --startbtn: #151515;
+}
+* {
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    justify-items: center;
+    cursor: default;
+    background-color: var(--main);
+    color: var(--font-color);
+}
+.menuChoices {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background-color: var(--choices-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    box-shadow: 0 0 30px #000;
+}
+a {
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    color: var(--font-color);
+    transition: 0.3s;
+}
+a:hover {
+    background-color: var(--a-hover);
+}
+#focus {
+    background-color: var(--choice-focus);
+}
+.clock {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--choices-background);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 26px;
+    padding-top: 34px;
+    margin-top: 20vh;
+    box-shadow: 0 0 20px #000;
+    position: relative;
+    text-shadow: 0 0 20px #000;
+}
+#clock {
+    font-size: 55px;
+}
+#modeText {
+    position: absolute;
+    left: 12%;
+    bottom: 44%;
+    font-size: 19px;
+}
+.dateAndDay {
+    justify-items: center;
+    display: flex;
+    gap: 12px;
+}
+#addAlarm {
+    position: fixed;
+    bottom: 70px;
+    left: 16px;
+    background-color: var(--choices-background);
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px #000;
+    font-size: 36px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#addAlarm:hover {
+    background-color: var(--a-hover);
+}
+.alarmsContinear {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    bottom: 56px;
+    padding-top: 35px;
+    padding-bottom: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+    overflow-y: auto;
+}
+.alarmCard {
+    width: 95vw;
+    height: 120px;
+    background-color: var(--choices-background);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #000;
+    transition: 0.3s;
+    position: relative;
+}
+#alarmModeText {
+    position: absolute;
+    right: 122px;
+    top: 38%;
+    font-size: 16px;
+}
+.time {
+    font-size: 42px;
+}
+.part1 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.part2 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-end;
+}
+input[type="checkbox"] + label {
+    background-color: var(--main);
+    width: 58px;
+    height: 26px;
+    display: flex;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 13px;
+    margin-top: 10px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+input[type="checkbox"] {
+    display: none;
+}
+.circle {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    display: block;
+    border-radius: 50%;
+    transition: 0.3s;
+    background-color: #999;
+}
+.continear {
+    width: 380px;
+    height: 240px;
+    background-color: var(--choices-background);
+    border-radius: 45px;
+    margin-top: 10vh;
+    box-shadow: 0 0 20px #000;
+    display: flex;
+    justify-content: center;
+    padding-top: 56px;
+    box-sizing: border-box;
+    position: relative;
+}
+#display {
+    font-size: 54px;
+}
+#btns button {
+    background-color: var(--main);
+    color: var(--font-color);
+    border: none;
+    height: 40px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+#btns button:hover, #btns button:hover {
+    background-color: var(--startbtn);
+}
+#btns {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+#start {
+    width: 100px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+#turn, #reset {
+    width: 76px;
+}
+#turn {
+    display: none;
+}
+#turn span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--font-color);
+    margin-top: 5px;
+}
+#reset span {
+    font-size: 20px;
+    display: block;
+    transform: rotate(110deg);
+}
+#stopWatchsContinear {
+    width: 100vw;
+    bottom: 57px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 2px;
+    height: 37.7vh;
+    gap: 8px;
+}
+.stopWatchsCard {
+    width: 95vw;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 5px 30px;
+    background-color: var(--alarm-card);
+    border-radius: 20px;
+    font-size: 22px;
+}
+select {
+    display: block;
+}
+.addAlarmBox {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 54vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--choices-background);
+    border-top-right-radius: 26px;
+    border-top-left-radius: 26px;
+    animation: appear 0.2s linear forwards;
+    box-shadow: 0 0 20px #000;
+}
+.addAlarmBox input, select {
+    width: 67vw;
+    background-color: var(--choices-background);
+    border: none;
+    border-bottom: 2px solid var(--font-color);
+    outline: none;
+    height: 9.2vh;
+    color: var(--font-color);
+    font-size: 18px;
+}
+.smallLine {
+    justify-items: flex-start;
+    background-color: var(--a-hover);
+    width: 70px;
+    height: 3px;
+    position: absolute;
+    top: 12px;
+}
+.btnContinear {
+    width: 100vw;
+    box-sizing: border-box;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+    animation: appear 0.2s linear forwards;
+}
+.btnContinear .ok {
+    background-color: #8d8d8d44;
+    border: none;
+    color: var(--font-color);
+    width: 76px;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 15px;
+}
+.btnContinear .ok:hover {
+    background-color: #a1a1a144;
+}
+.hide {
+    animation: appear 0.2s reverse forwards;
+}
+@keyframes appear {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+}
+@keyframes hide {
+    to {
+        height: 0;
+        opacity: 0;
+    }
+}
