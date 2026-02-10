@@ -126,7 +126,7 @@ if (startBtn) {
         if (turn == false) {
             startBtn.style.width = "90px";
             turnBtn.style.display = "block";
-            startBtn.innerHTML = "&#9208;";
+            startBtn.textContent = "||";
             if (!running) {
                 running = setInterval(() => {
                     ms++;

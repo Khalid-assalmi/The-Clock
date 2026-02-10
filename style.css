@@ -45,8 +45,8 @@ a:hover {
     background-color: var(--choice-focus);
 }
 .clock {
-    width: 300px;
-    height: 300px;
+    width: 340px;
+    height: 340px;
     border-radius: 50%;
     background-color: var(--choices-background);
     box-sizing: border-box;
@@ -62,12 +62,12 @@ a:hover {
     text-shadow: 0 0 20px #000;
 }
 #clock {
-    font-size: 48px;
+    font-size: 60px;
 }
 #modeText {
     position: absolute;
-    left: 13%;
-    bottom: 42%;
+    left: 12%;
+    bottom: 41%;
     font-size: 19px;
 }
 .dateAndDay {
@@ -258,7 +258,7 @@ select {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 48vh;
+    height: 46vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -275,7 +275,7 @@ select {
     border: none;
     border-bottom: 2px solid var(--font-color);
     outline: none;
-    height: 9.2vh;
+    height: 8vh;
     color: var(--font-color);
     font-size: 18px;
 }
@@ -305,8 +305,8 @@ select {
     background-color: #8d8d8d44;
     border: none;
     color: var(--font-color);
-    width: 76px;
-    height: 36px;
+    width: 78px;
+    height: 38px;
     cursor: pointer;
     border-radius: 12px;
     font-size: 15px;
