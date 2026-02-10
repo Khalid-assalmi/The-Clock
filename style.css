@@ -22,7 +22,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 56px;
+    height: 62px;
     background-color: var(--choices-background);
     display: flex;
     justify-content: center;
@@ -61,12 +61,12 @@ a:hover {
     text-shadow: 0 0 20px #000;
 }
 #clock {
-    font-size: 55px;
+    font-size: 48px;
 }
 #modeText {
     position: absolute;
-    left: 12%;
-    bottom: 44%;
+    left: 13%;
+    bottom: 42%;
     font-size: 19px;
 }
 .dateAndDay {
@@ -126,7 +126,7 @@ a:hover {
     font-size: 16px;
 }
 .time {
-    font-size: 42px;
+    font-size: 38px;
 }
 .part1 {
     display: flex;
@@ -254,7 +254,7 @@ select {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 54vh;
+    height: 48vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -278,7 +278,7 @@ select {
 .smallLine {
     justify-items: flex-start;
     background-color: var(--a-hover);
-    width: 70px;
+    width: 60px;
     height: 3px;
     position: absolute;
     top: 12px;
