@@ -16,6 +16,7 @@ body {
     cursor: default;
     background-color: var(--main);
     color: var(--font-color);
+    overflow: hidden;
 }
 .menuChoices {
     position: fixed;
@@ -97,9 +98,9 @@ a:hover {
     width: 100vw;
     position: fixed;
     top: 0;
-    bottom: 56px;
+    bottom: 0;
     padding-top: 35px;
-    padding-bottom: 85px;
+    padding-bottom: 147px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -224,9 +225,9 @@ input[type="checkbox"] {
 }
 #stopWatchsContinear {
     width: 100vw;
-    bottom: 57px;
+    bottom: 0;
     padding-top: 15px;
-    padding-bottom: 25px;
+    padding-bottom: 87px;
     display: flex;
     flex-direction: column;
     align-items: center;
